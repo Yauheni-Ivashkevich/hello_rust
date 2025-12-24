@@ -23,13 +23,6 @@ fn main() {
     // Partial destructuring (ignore first and last values)
     let (_, b, _) = t;
 
-    // Destructuring function return value
-    let (u, b) = return_many();
-
-    // Empty tuple = unit type
-    // Useful when returning a type with no value (example: Result<(), Error>)
-    let empty = ();
-
     // Nested tuple
     let nested = (('a', 1.23), ('b', true, 1), ());
     println!("nested: {}", (nested.0).1);
