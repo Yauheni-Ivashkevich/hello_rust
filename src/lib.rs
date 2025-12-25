@@ -1,12 +1,12 @@
-pub fn zeros() -> [u32; 100] {
-    [0; 100]
+pub fn hello() -> String {
+    "Hello Rust".to_string()
 }
 
-pub fn first_3(s: &[u32]) -> &[u32] {
-    &s[..3]
+pub fn greet(name: &str) -> String {
+    format!("Hello {}", name)
 }
 
-pub fn last_3(s: &[u32]) -> &[u32] {
-    let n = s.len();
-    &s[n - 3..]
+pub fn append(mut s: String) -> String {
+    s += "!";
+    s
 }
