@@ -17,14 +17,6 @@ fn main() {
         height: 300,
     };
 
-    // Debug
-    println!("command: {:?}", cmd);
-
-    // PartialEq
-    let cmd0 = Command::Play;
-    let cmd1 = Command::Stop;
-    println!("{:?} == {:?}  ? {}", cmd0, cmd1, cmd0 == cmd1);
-
     // Option<T> = Some(T) | None
     let x: Option<i32> = Some(-1);
     let x: Option<i32> = None;
